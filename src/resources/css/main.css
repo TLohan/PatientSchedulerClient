@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-Oct-2018, 20:23:15
+    Author     : tloha
+*/
+
+.button {
+    -fx-background-color:  #307ee8;
+    -fx-border-color: #163f77;
+}
+
+.button:hover {
+    -fx-background-color: #7398d6;
+}
+
+.datePicker .text-field {
+    -fx-background-color: #585e68;
+    -fx-text-inner-color:  #d2def2;
+}
+
+#titleComboBox .context-menu {
+    -fx-background-color: #7398d6;
+}
+
+#titleComboBox .label {
+    -fx-text-fill:  #d2def2;
+}

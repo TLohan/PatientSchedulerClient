@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" minHeight="400.0" minWidth="1000.0" style="-fx-min-width: 1000px;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="1000.0" style="-fx-background-color: #3d4855;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="200.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="200.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label text="ER ADMIN SYSTEM" textAlignment="JUSTIFY" textFill="#b8c8e1" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Yu Gothic Medium" size="64.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="100.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="loginHospital_id" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="293.0" promptText="Hospital ID" style="-fx-background-color: #585e68; -fx-text-inner-color: #d2def2;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets top="75.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="loginPassword" alignment="CENTER" prefHeight="44.0" prefWidth="298.0" promptText="Password" style="-fx-background-color: #585e68; -fx-text-inner-color: #d2def2;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="75.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginBtn" defaultButton="true" mnemonicParsing="false" onAction="#onLogInClick" prefHeight="51.0" prefWidth="170.0" stylesheets="@../css/main.css" text="LOG IN" textFill="#ebe3e3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="100.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Label fx:id="validationLabel" alignment="CENTER" text="Error!" textAlignment="CENTER" textFill="#ff4444" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <padding>
+                  <Insets top="70.0" />
+               </padding>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <TilePane fx:id="errorPane" alignment="CENTER" opacity="0.52" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: crimson;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Warning.png" />
+               </image>
+            </ImageView>
+            <Label id="errorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="408.0" style="-fx-alignment: center;" stylesheets="@../css/main.css" text="Error! Unable to contact server." textAlignment="CENTER" textFill="#cdb8b8">
+               <font>
+                  <Font name="Yu Gothic Medium" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </TilePane>
+   </children>
+</AnchorPane>
