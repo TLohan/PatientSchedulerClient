@@ -4,8 +4,8 @@ This is a client-server application designed to help the processing of patients 
 
 
 ## Running the application
-Extract the files and open the 'dist' folder. Execute the EmerergencyRoomAdminApp jar file. 
-__Please note the server application must be running first for the application to be functional.__
+Download the EmerergencyRoomAdminApp jar [file](https://github.com/TLohan/PatientSchedulerClient/blob/master/dist/EmergencyRoomAdminApp.jar) from the 'dist' folder. 
+__Please note the [server](https://github.com/TLohan/PatientSchedulerServer/blob/master/dist/PatientSchedulerServer.jar) application must be running first for the application to be functional.__
 
 ### Dummy Login Credentials
 
